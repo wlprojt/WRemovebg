@@ -231,7 +231,7 @@ const handleRedo = () => {
   };
 
   return (
-    <div className="flex flex-col bg-gradient-to-br from-blue-100 to-gray-100 h-full w-full items-center gap-4 p-6">
+    <div className="flex flex-col bg-gradient-to-br from-blue-100 to-gray-100 overflow-hidden items-center gap-4 p-6">
       <h1 className="text-2xl md:text-3xl text-black font-bold">AI Background Remover</h1>
 
       <div className="flex flex-col md:flex-row gap-2">
@@ -348,7 +348,7 @@ const handleRedo = () => {
         setCursor((prev) => ({ ...prev, visible: true }))
       }
       onMouseMove={draw}
-      className="block cursor-none"
+      className="block cursor-none w-100 md:w-auto max-w-full h-auto"
     />
   </div>
 
